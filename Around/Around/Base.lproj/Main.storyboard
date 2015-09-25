@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Around" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-RL-R73">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11F-qH-WDE">
+                                <rect key="frame" x="140" y="508" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="buW-Jb-Rs6"/>
+                                    <constraint firstAttribute="height" constant="40" id="xut-gj-tmr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="redX"/>
+                                <connections>
+                                    <action selector="mainButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oa9-Xg-vsv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOs-wU-vKz">
+                                <rect key="frame" x="143" y="413" width="35" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.40725325421377656" blue="0.33769222179692027" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Hotel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonHotelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nri-8z-NDT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-Gv-HoX">
+                                <rect key="frame" x="143" y="413" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.83332872912795952" green="0.42024185808533543" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Shop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonShopClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdp-zb-eA1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxk-C0-QmL">
+                                <rect key="frame" x="143" y="413" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.34071937578671552" green="0.60600151820057824" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="7Zo-Og-LgY"/>
+                                    <constraint firstAttribute="height" constant="35" id="ZLg-cZ-OEs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <state key="normal" title="Hospital">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonHospClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2N-0g-FsU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hxk-C0-QmL" firstAttribute="leading" secondItem="DOs-wU-vKz" secondAttribute="leading" id="0I5-b4-dOQ"/>
+                            <constraint firstItem="Qjo-RL-R73" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0X4-GI-8NL"/>
+                            <constraint firstItem="Smf-Gv-HoX" firstAttribute="baseline" secondItem="DOs-wU-vKz" secondAttribute="firstBaseline" id="0Zz-br-XjB"/>
+                            <constraint firstItem="DOs-wU-vKz" firstAttribute="centerX" secondItem="11F-qH-WDE" secondAttribute="centerX" id="16x-RF-0dn"/>
+                            <constraint firstItem="Smf-Gv-HoX" firstAttribute="trailing" secondItem="hxk-C0-QmL" secondAttribute="trailing" id="5Ad-l1-OU8"/>
+                            <constraint firstItem="Smf-Gv-HoX" firstAttribute="trailing" secondItem="DOs-wU-vKz" secondAttribute="trailing" id="7WJ-nA-3lG"/>
+                            <constraint firstItem="hxk-C0-QmL" firstAttribute="top" secondItem="DOs-wU-vKz" secondAttribute="top" id="Dlz-cj-GOa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="11F-qH-WDE" secondAttribute="bottom" constant="20" id="GdA-mr-4wJ"/>
+                            <constraint firstItem="Qjo-RL-R73" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L2b-ow-p4G"/>
+                            <constraint firstItem="11F-qH-WDE" firstAttribute="top" secondItem="DOs-wU-vKz" secondAttribute="bottom" constant="60" id="PEZ-Am-kUR"/>
+                            <constraint firstItem="11F-qH-WDE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ahS-J7-bK1"/>
+                            <constraint firstItem="Smf-Gv-HoX" firstAttribute="top" secondItem="hxk-C0-QmL" secondAttribute="top" id="d3L-ly-iHB"/>
+                            <constraint firstItem="Qjo-RL-R73" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ddw-hf-ayW"/>
+                            <constraint firstItem="DOs-wU-vKz" firstAttribute="baseline" secondItem="Smf-Gv-HoX" secondAttribute="firstBaseline" id="eSV-Sg-n3X"/>
+                            <constraint firstItem="Qjo-RL-R73" firstAttribute="centerX" secondItem="hxk-C0-QmL" secondAttribute="centerX" id="oT8-Wg-Vnk"/>
+                            <constraint firstItem="hxk-C0-QmL" firstAttribute="bottom" secondItem="Smf-Gv-HoX" secondAttribute="bottom" id="wAZ-9P-8fZ"/>
+                            <constraint firstItem="Smf-Gv-HoX" firstAttribute="leading" secondItem="DOs-wU-vKz" secondAttribute="leading" id="xts-BV-h0K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonHosp" destination="hxk-C0-QmL" id="QvU-ki-kSP"/>
+                        <outlet property="buttonHotel" destination="DOs-wU-vKz" id="tbQ-v0-F7b"/>
+                        <outlet property="buttonShop" destination="Smf-Gv-HoX" id="qOF-N4-nao"/>
+                        <outlet property="mainButton" destination="11F-qH-WDE" id="JrE-tR-bJc"/>
+                        <outlet property="mapView" destination="Qjo-RL-R73" id="sXC-4z-hDb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="redX" width="512" height="512"/>
+    </resources>
+</document>
