@@ -1,2 +1,2 @@
 # iOSKits
-![alt tag](/Users/dongli/Desktop/map.png)
+![](/Users/dongli/Desktop/map.png)
